@@ -5,7 +5,6 @@ const CounterApp = ({ value }) => {
     
     // 
     const [ counter, setCounter ] = useState(0); // Primer parametro nombre de la variable, segundo es una funcion que se coloca con set<nombre de la variable>
-    console.log(counter);
 
     // handleAdd
     const handleAdd = (e) => {
@@ -19,9 +18,6 @@ const CounterApp = ({ value }) => {
     const handleSubstract = () => {
         setCounter( counter - 1 );
     }
-
-
-
 
     return (
         <>
