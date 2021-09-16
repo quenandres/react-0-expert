@@ -1,6 +1,4 @@
 
-
-
 const nombre   = 'Fernando';
 const apellido = 'Herrera';
 
@@ -8,11 +6,11 @@ const apellido = 'Herrera';
 // const nombreCompleto = nombre + ' ' + apellido;
 const nombreCompleto = `${ nombre } ${ apellido }`;
 
-console.log( nombreCompleto );
+//console.log( nombreCompleto );
 
 
-function getSaludo(nombre) {
-    return 'Hola ' + nombre;
+export function getSaludo( nombre='Carlos' ) { // Para hacer la prueba en otro lado, se debe hacer exportacion de la funcion
+    return 'Hola ' + nombre +'!';
 }
 
-console.log( `Este es un texto: ${ getSaludo( nombre ) }  ` );
+//console.log( `Este es un texto: ${ getSaludo( nombre ) }  ` );
