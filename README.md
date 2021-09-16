@@ -57,3 +57,7 @@ describe('Pruebas del archivo demo.test.js', () => {
     })
 });
 ```
+
+```
+toEqual para compara objetos
+```
