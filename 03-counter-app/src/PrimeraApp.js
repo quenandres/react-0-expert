@@ -3,18 +3,19 @@ import React from 'react';
 
 // Functional components
 
-const PrimeraApp = () => {
+const PrimeraApp = ( {saludo = 'Hola soy goku'} ) => {
 
-    const saludo = {
+    /* const saludo = {
         nombre: 'Fernando',
         edad: 34
-    };
+    }; */
+
 
     const saludo2 = 'Hola';
 
     return (
         <>
-            <h1>{ saludo2 }</h1>
+            <h1>{ saludo }</h1>
             {/* <pre>{ JSON.stringify(saludo, null, 3) }</pre> */}
             <p>dawwdaawd</p>
         </>
