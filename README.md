@@ -20,7 +20,7 @@
 *Pruebas de integración:*
  - Se confirma que todos los componentes probados individualmente se integren bien entre todos.
 
- AAA
+ ## AAA
  - Arrange
     * Inicializamos variables
     * Importaciones necesarias
@@ -59,6 +59,6 @@ describe('Pruebas del archivo demo.test.js', () => {
 ```
 
 ```
-toEqual para compara objetos
+toEqual para comparar objetos
 toBe para primitivos
 ```
