@@ -62,3 +62,9 @@ describe('Pruebas del archivo demo.test.js', () => {
 toEqual para comparar objetos
 toBe para primitivos
 ```
+
+# Enzyme
+Se instala enzyme-to-json
+"@wojtekmaj/enzyme-adapter-react-17": "^0.6.3", // Esta version viene de un repositorio externo que hacer que funcione mientras sale la version de enzyme para react 17
+"enzyme": "^3.11.0",
+"enzyme-to-json": "^3.6.2"
