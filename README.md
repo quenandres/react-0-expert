@@ -63,10 +63,23 @@ toEqual para comparar objetos
 toBe para primitivos
 ```
 
-# Enzyme
+### Enzyme
 Se instala enzyme-to-json
 "@wojtekmaj/enzyme-adapter-react-17": "^0.6.3", // Esta version viene de un repositorio externo que hacer que funcione mientras sale la version de enzyme para react 17
 "enzyme": "^3.11.0",
 "enzyme-to-json": "^3.6.2"
 
 - wrapper: tiene la informacion del componente renderizada para que pueda ser utilizada y comparada desde el test.
+
+**Seccion 6 GifExpertApp - Aplicacion.**
+# Temas
+- Custom Hooks
+- Fetch hacia un API
+- Comunicación entre componentes
+- Clases de CSS
+- Animaciones
+- Enviar métodos como argumentos
+- Crear listados
+- keys
+- Giphy
+Esta es una aplicación pequeña pero muy ilustrativa que explica cómo utilizar React + customHooks para poder resolver necesidades en específico que podremos re-utilizar después.
