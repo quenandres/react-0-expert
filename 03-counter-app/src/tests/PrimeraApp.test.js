@@ -16,7 +16,24 @@ describe('Pruebas en <PrimeraApp />', () => {
         const wrapper = shallow( <PrimeraApp saludo={ saludo }/> ); // Parecido a render pero puede simular click y trabajar con queryselector
 
         expect(wrapper).toMatchSnapshot();
+    });
+
+    test('debe de mostrar el subtitulo enviado props', () => {
+        const saludo = 'Hola, Soy Goku';
+        const subtitulo = 'Soy un subtitulo';
+        const wrapper = shallow(
+            <PrimeraApp 
+                saludo={saludo}
+                subtitulo={subtitulo}
+            />
+        );
+
+        const textoParrafo = wrapper.find('p').text();//Wrapper tiene toda la informacion renderizada
+        // Si se quiere buscar un h1 wrapper.find('h1') Si se quiere buscar por id es igual que en css # o .
+        expect( textoParrafo ).toBe( subtitulo );
+
     })
+    
     
 
 })

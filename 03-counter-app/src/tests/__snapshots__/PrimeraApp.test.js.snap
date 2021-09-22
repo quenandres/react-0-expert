@@ -8,12 +8,7 @@ exports[`Pruebas en <PrimeraApp /> debe de mostrar <PrimeraApp /> correctamente 
      !!
   </h1>
   <p>
-     
-    Soy un subtitulo ahhh
-     
-  </p>
-  <p>
-    ad aasa 1 asasas asdasdad
+    Soy un subtitulo
   </p>
 </Fragment>
 `;
