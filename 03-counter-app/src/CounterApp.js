@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-const CounterApp = ({ value }) => {
-    
+const CounterApp = ({ value = 10 }) => {
+    /**
+     * Tarea:
+     * debe mostrar <CounterApp/> correctamente (hacer match con un snapshot) y sus valores por defecto
+     * debe mostrar el valor por defecto de 100
+     * usar wrapper.find. tomando el elemento html donde se muestra el valor del contador
+     */
     // 
-    const [ counter, setCounter ] = useState(0); // Primer parametro nombre de la variable, segundo es una funcion que se coloca con set<nombre de la variable>
+    const [ counter, setCounter ] = useState(value); // Primer parametro nombre de la variable, segundo es una funcion que se coloca con set<nombre de la variable>
 
     // handleAdd
     const handleAdd = (e) => {
