@@ -71,7 +71,7 @@ Se instala enzyme-to-json
 
 - wrapper: tiene la informacion del componente renderizada para que pueda ser utilizada y comparada desde el test.
 
-**Seccion 6 GifExpertApp - Aplicacion.**
+# ***Seccion 6 GifExpertApp - Aplicacion.***
 # Temas
 - Custom Hooks
 - Fetch hacia un API
