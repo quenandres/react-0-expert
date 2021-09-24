@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 export const GifGrid = ( { category } ) => {
     
+    const [count, setCount ] = useState(0);
+
+    useEffect(() => {
+        getGifs();
+    }, []) // Segundo argumento vacio para que determine que no tiene dependencias
+
     const getGifs = async () => {
         const url = 'https://api.giphy.com/v1/gifs/search?q=Rick and morty&limit=10&api_key=xJw4xi7Ze2WIz1WMAEkpY9Ppnc7NUkKF';
         const resp = await fetch( url );
@@ -10,17 +16,16 @@ export const GifGrid = ( { category } ) => {
             return {
                 id: img.id,
                 title: img.title,
-                url: img.images.downsized_medium.url
+                url: img.images?.downsized_medium.url
             }
         })
         console.log(gifs);
     }
 
-    getGifs();
-
     return (
         <div>
             <h3>{category}</h3>
+            <button onClick={ () => setCount( count + 1 ) }>+</button>
         </div>
     )
 }
