@@ -83,3 +83,20 @@ Se instala enzyme-to-json
 - keys
 - Giphy
 Esta es una aplicación pequeña pero muy ilustrativa que explica cómo utilizar React + customHooks para poder resolver necesidades en específico que podremos re-utilizar después.
+```
+<AddCategory setCategories={ setCategories }/>
+```
+Se envia el props llamado setCategories
+```
+export const AddCategory = ( {setCategories} ) => {
+```
+Se recibe al iniciar la funcion pasada como un parametro desestructurado { setCategories }
+# 
+```
+import PropTypes from 'prop-types'; // ES6
+- 1. Se pone el nombre del componente y se modifican los campos que se necesiten
+AddCategory.propTypes = {
+    setCategories: PropTypes.func.isRequired
+  };
+
+```
