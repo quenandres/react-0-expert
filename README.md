@@ -103,3 +103,6 @@ AddCategory.propTypes = {
 
 ### Hook useEffect
 Nos permite correr el codigo de manera condicional
+
+### Custom Hook
+Una forma de extraer logica que se quiere reutilizar

@@ -1,23 +1,26 @@
-import React, { useState, useEffect } from 'react'
-import { getGifs } from '../helpers/getGifs';
-import { GifGridItem } from './GifGridItem';
+import React from 'react'
+import { useFetchGifs } from '../hooks/useFetchGifs'
+//import { getGifs } from '../helpers/getGifs';
+//import { GifGridItem } from './GifGridItem';
 
 export const GifGrid = ( { category } ) => {
 
-    const [images, setImages] = useState([]);
+    const { loading } = useFetchGifs();
+    /* const [images, setImages] = useState([]);
 
     useEffect(() => {
         getGifs( category ).then(
             imgs => setImages(imgs)
         );
-    }, [ category ]) // Segundo argumento vacio para que determine que no tiene dependencias
-
+    }, [ category ]) // Segundo argumento vacio para que determine que no tiene dependencias, si tiene el argumento, se ejecuta cuando se modifica la variable
+    */
     
 
     return (
         <>
             <h3>{category}</h3>
-            <div className="card-grid">
+            { loading ? 'Cargando..' : 'Data cargada' }
+            {/* <div className="card-grid">
                 
                 {
                     images.map((img) => (
@@ -28,7 +31,7 @@ export const GifGrid = ( { category } ) => {
                     ))
                 }
                 
-            </div>
+            </div> */}
         </>
     )
 }
