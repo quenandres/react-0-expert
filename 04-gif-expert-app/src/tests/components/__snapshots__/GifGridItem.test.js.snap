@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas de GifGridItem Mostrar correctamente el gifGridItem 1`] = `
+<div
+  className="card animate__rubberBand"
+>
+  <h1>
+    Test
+  </h1>
+  <img />
+  <p>
+     
+     
+  </p>
+</div>
+`;
