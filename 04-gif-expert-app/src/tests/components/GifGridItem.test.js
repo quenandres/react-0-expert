@@ -3,18 +3,13 @@ import '@testing-library/jest-dom';
 import { shallow } from 'enzyme';
 import { GifGridItem } from '../../components/GifGridItem';
 
-/* 
- 1. Enzyme
- 2. Enzyme to json
- 3. Mostrar el componente correctamente
-    * shallow
-    * wrapper
-    * wrapper .toMatchSnapshot
-*/
-
 describe('Pruebas de GifGridItem', () => {
+
+    const title = 'Titulo';
+    const url = 'https://localhost/algo.png';
+
     test('Mostrar correctamente el gifGridItem', () => {
-        const wrapper = shallow(<GifGridItem />);
+        const wrapper = shallow(<GifGridItem title={ title } url = { url }/>);
         expect(wrapper).toMatchSnapshot();
     })
     
