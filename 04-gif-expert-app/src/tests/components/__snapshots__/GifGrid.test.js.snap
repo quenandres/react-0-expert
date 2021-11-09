@@ -9,8 +9,8 @@ exports[`test para <GifGrid /> debe mostrar items cuando cargan imagenes useFetc
     className="card-grid animate__animated animate__swing"
   >
     <GifGridItem
-      id="0"
-      key="0"
+      id="123"
+      key="123"
       title="mockTitle"
       url="https://lorem.com/img"
     />

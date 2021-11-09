@@ -34,7 +34,7 @@ describe('test para <GifGrid />', () => {
 
     test('debe mostrar items cuando cargan imagenes useFetchGifs', () => {
         const data = [{
-          id: '0',
+          id: '123',
           url: 'https://lorem.com/img',
           title: 'mockTitle'
         }];
@@ -43,7 +43,8 @@ describe('test para <GifGrid />', () => {
           return { data, loading: false };
         });
         const wrapper = shallow( <GifGrid category={ category } /> );
-        expect( wrapper ).toMatchSnapshot();
-
+        expect( wrapper ).toMatchSnapshot();        
+        expect( wrapper.find('GifGridItem').length ).toBe(data.length);
+        expect( wrapper.find('p').exists() ).toBe(false);
     });
 })
