@@ -109,3 +109,38 @@ Una forma de extraer logica que se quiere reutilizar
 
 Para animaciones rapidas
 https://animate.style/
+
+
+## Profundizando Hooks
+Operador spread: ...
+```
+const [state, setState] = useState({
+        counter1: 10,
+        counter2: 20,
+        counter3: 30,
+        counter4: 40
+    });
+
+    const { counter1, counter2 } = state;
+
+    return (
+        <>
+            <h1>Counter {counter1}</h1>
+            <h1>Counter {counter2}</h1>
+            <hr/>
+
+            <button 
+                className="btn btn-primary" 
+                onClick={()=>{
+                    setState({
+                        ...state, // Operador spread
+                        counter1: counter1 + 1
+                    });
+                }}
+            >
+                +1
+            </button>
+        </>
+    )
+```
+Utilizado para que el nuevo valor no se pare encima del valor actual del state
