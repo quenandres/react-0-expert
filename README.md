@@ -144,3 +144,16 @@ const [state, setState] = useState({
     )
 ```
 Utilizado para que el nuevo valor no se pare encima del valor actual del state
+
+### 106. useCounter - CustomHook
+>Se crea un Hook personalizado que nos brinda las funciones para incrementar, decrementar y resetear el valor del state
+
+### 107. useEffect - SimpleForm
+> El hook useEffect permite ejecutar efecto secundario cuando algo suceda
+
+```
+    useEffect(() => {
+        console.log('hey');
+    }, []);
+```
+Si se le manda el parametro vacio, solo se ejecutara una sola vez, se pueden poner mas de un useEffect, para cambios especificos
