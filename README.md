@@ -157,3 +157,16 @@ Utilizado para que el nuevo valor no se pare encima del valor actual del state
     }, []);
 ```
 Si se le manda el parametro vacio, solo se ejecutara una sola vez, se pueden poner mas de un useEffect, para cambios especificos
+
+### 108. useEffect unmount - Cleanup
+- No se pueden usar hooks condicionados
+
+```
+    useEffect(() => {
+        console.log('componente montado');
+        return () => {
+            console.log('componente desmontado');
+        }
+    }, [])
+```
+la funcion del return en el useEffect es como el antiguo componentDismounted de react.
