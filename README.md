@@ -170,3 +170,6 @@ Si se le manda el parametro vacio, solo se ejecutara una sola vez, se pueden pon
     }, [])
 ```
 la funcion del return en el useEffect es como el antiguo componentDismounted de react.
+
+### 109. useEffect - Precauciones
+Se crea una funcion para la accion del event listener para que cuando sea finalizado el useEffect este cierre la relacion con el evento.

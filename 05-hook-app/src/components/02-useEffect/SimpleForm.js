@@ -12,15 +12,12 @@ export const SimpleForm = () => {
     const { name, email } = formState;
 
     useEffect(() => {
-        console.log('hey');
     }, []);
 
     useEffect(() => {
-        console.log('formState cambio');
     }, [formState]);
 
     useEffect(() => {
-        console.log('email cambio');
     }, [email]);
 
     const handleInputChange = ({target}) => {        
