@@ -29,7 +29,7 @@ export const SimpleForm = () => {
 
     return (
         <>
-         <h1>useEffect</h1>
+        <h1>useEffect</h1>
         <div className="form-group">
             <input
                 type="text"
