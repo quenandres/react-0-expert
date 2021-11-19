@@ -176,3 +176,6 @@ Se crea una funcion para la accion del event listener para que cuando sea finali
 
 ### 110. Formulario con custom Hook
 Custom Hook: donde nosotros creamos la funcionalidad del hook que necesitamos.
+
+### 111. useFetch - CustomHook
+Por medio de un useEffect, hacemos llamado al api
