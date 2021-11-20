@@ -179,3 +179,11 @@ Custom Hook: donde nosotros creamos la funcionalidad del hook que necesitamos.
 
 ### 111. useFetch - CustomHook
 Por medio de un useEffect, hacemos llamado al api
+
+### 112. useFetch + useCounter
+```!!``` Esta doble negacion se usa en los valores de null para definir si es true o false
+```
+!null = true
+!!null = false
+```
+Conecto funcionamiento de hook counter, para crear un paginador
