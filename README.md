@@ -187,3 +187,6 @@ Por medio de un useEffect, hacemos llamado al api
 !!null = false
 ```
 Conecto funcionamiento de hook counter, para crear un paginador
+
+### 113. useRef - Primer uso
+Definimos como referencia a una etiqueta y podemos manejar acciones del input
