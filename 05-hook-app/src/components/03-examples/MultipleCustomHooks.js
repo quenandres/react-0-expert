@@ -37,12 +37,15 @@ export const MultipleCustomHooks = () => {
                 >
                     Anterior Frase
                 </button>
+            }
+            {
+                counter < 30 &&
+                <button className="btn btn-primary" 
+                    onClick={increment}
+                >
+                    Siguiente Frase
+                </button>
             }   
-            <button className="btn btn-primary" 
-                onClick={increment}
-            >
-                Siguiente Frase
-            </button>
 
         </div>
     )
