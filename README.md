@@ -145,6 +145,8 @@ const [state, setState] = useState({
 ```
 Utilizado para que el nuevo valor no se pare encima del valor actual del state
 
+## Link Dev
+ - https://dev.to/dev117uday/react-hooks-0-to-hero-4b7o
 ### 106. useCounter - CustomHook
 >Se crea un Hook personalizado que nos brinda las funciones para incrementar, decrementar y resetear el valor del state
 
@@ -190,3 +192,9 @@ Conecto funcionamiento de hook counter, para crear un paginador
 
 ### 113. useRef - Primer uso
 Definimos como referencia a una etiqueta y podemos manejar acciones del input
+
+### 114. useRef - Caso de uso real
+Definimos isMounted como una referencia, la ponemos en el return del useEffect para que cuando se desmonte el componente cambie el valor de isMounter a false y asi no ejecute el useState.
+
+### 115. useLayoutEffect
+Con ayuda del useRef, definimos un parrafo como referencia para cuando el width del p cambie de tamaño
