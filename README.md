@@ -198,3 +198,6 @@ Definimos isMounted como una referencia, la ponemos en el return del useEffect p
 
 ### 115. useLayoutEffect
 Con ayuda del useRef, definimos un parrafo como referencia para cuando el width del p cambie de tamaño
+
+### 116. Memo - Método de React
+Especifica que un componente solo se va a renderizar si alguna de sus propiedades cambia, de lo contraria va a memorizar el componente
