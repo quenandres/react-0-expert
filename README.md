@@ -201,3 +201,9 @@ Con ayuda del useRef, definimos un parrafo como referencia para cuando el width 
 
 ### 116. Memo - Método de React
 Especifica que un componente solo se va a renderizar si alguna de sus propiedades cambia, de lo contraria va a memorizar el componente
+
+### 117. useMemo
+```
+useMemo(() => procesoPesado(counter), [ counter ]);
+```
+Nos brinda un callback para poner la operacion que necesitemos que se recuerde y nos brinda un array para especificar en que momentos se debe volver a llamar dicha funcion
