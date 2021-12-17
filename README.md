@@ -207,3 +207,8 @@ Especifica que un componente solo se va a renderizar si alguna de sus propiedade
 useMemo(() => procesoPesado(counter), [ counter ]);
 ```
 Nos brinda un callback para poner la operacion que necesitemos que se recuerde y nos brinda un array para especificar en que momentos se debe volver a llamar dicha funcion
+
+### 118. useCallback
+ El uso de este callback son 2 principalmente
+  * 1. Cuando se necesita enviar una funcion a un componente hijo
+  * 2. Para cuando se usa un use Effect, y el efecto es la funcion tambien se debe poner useCallback por que si no, se estara llamando cada vez que se renderice la funcion.
