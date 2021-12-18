@@ -212,3 +212,26 @@ Nos brinda un callback para poner la operacion que necesitemos que se recuerde y
  El uso de este callback son 2 principalmente
   * 1. Cuando se necesita enviar una funcion a un componente hijo
   * 2. Para cuando se usa un use Effect, y el efecto es la funcion tambien se debe poner useCallback por que si no, se estara llamando cada vez que se renderice la funcion.
+
+
+## Seccion 10 Profundizando Hooks - useReducer
+- Temas
+    * useReducer
+    * Reducers
+    * Teoría de un reducer
+    * Aplicación de TODOs
+    * CRUD local
+
+Esta es una sección dedicada a comprender el concepto de un Reducer, el cual es sumamente importante para poder entrar a Redux o bien usar el contextAPI fácilmente.
+
+¿Que es Reducer?
+1. Es una funcion que no puede ser asincrona
+2. Debe ser una funcion pura, se debe resolver de manera interna
+   1. Debe resolver todo su proceso por si mismo, sin depender de otras funciones
+   2. No debe realizar tareas asincronas
+   3. Debe retornar siempre un estado nuevo
+   4. No debe llamar localStorage o sessionStorages
+   5. No debe de requerir mas que una accion que puede tener un argumento
+3. Debe retornar un nuevo estado
+4. Usualmente solo recibe 2 argumentos
+   1. El valor inicial (initialState) y la accion a ejecutar
