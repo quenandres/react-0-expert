@@ -235,3 +235,39 @@ Esta es una sección dedicada a comprender el concepto de un Reducer, el cual es
 3. Debe retornar un nuevo estado
 4. Usualmente solo recibe 2 argumentos
    1. El valor inicial (initialState) y la accion a ejecutar
+
+### 124. Idea general de un reducer - Vía código
+Para manejar acciones de reducer, existe un estandar en el que se define el type del reducer y el payload(Valores nuevos que se envian)
+```
+const initialState = [{
+    id: 1,
+    todo: 'Comprar pan',
+    done: false
+}];
+
+const todoReducer = (state = initialState, action) => { //Las acciones son las que van a modificar el state
+    
+    if( action?.type == 'agregar' ){ // Quien va a modificar el state
+        return [ ...state, action.payload ]
+    }
+    
+    return state;
+}
+
+let todos = todoReducer();
+
+const newTodo = {
+    id: 2,
+    todo: 'Comprar leche',
+    done: false
+}
+
+const action = {
+    type: 'agregar',
+    payload: newTodo //Estandar para que otros desarrolladores trabajen con el payload
+}
+
+todos = todoReducer( todos, action );
+
+console.log(todos);
+```

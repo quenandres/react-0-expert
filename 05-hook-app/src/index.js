@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import ReactDOM from 'react-dom';
 //import { CallbackHook } from './components/06-memos/CallbackHook';
 import { Padre } from './components/07-tarea-memo/Padre';
@@ -19,3 +19,6 @@ ReactDOM.render(
     <Padre />, document.getElementById('root')
 );
 
+ */
+
+import './components/08-use-reducer/intro-reducer';
