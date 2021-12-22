@@ -271,3 +271,12 @@ todos = todoReducer( todos, action );
 
 console.log(todos);
 ```
+
+### 125. useReducer - Todo List
+El use reducer, funciona similar a un useState, con la diferencia que esta hecho para proceso mas grandes, lo mas aconsejable es utilizar el useState cuando el proceso no sea complejo
+```
+    const [state, dispatch] = useReducer(reducer, initialState, init)
+    - initialState: Estado inicial
+    - init: Function para inicializar el state, en caso de que se hagan varias acciones
+    - dispatch: Ayudara a disparar las acciones hacia el reducer
+```
