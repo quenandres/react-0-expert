@@ -280,3 +280,6 @@ El use reducer, funciona similar a un useState, con la diferencia que esta hecho
     - init: Function para inicializar el state, en caso de que se hagan varias acciones
     - dispatch: Ayudara a disparar las acciones hacia el reducer
 ```
+
+### 127. Agregar un nuevo TODO
+La funcion dispatch, sabe a que reducer pertenece y puede ser enviada como parametro a hijos
