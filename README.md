@@ -283,3 +283,6 @@ El use reducer, funciona similar a un useState, con la diferencia que esta hecho
 
 ### 127. Agregar un nuevo TODO
 La funcion dispatch, sabe a que reducer pertenece y puede ser enviada como parametro a hijos
+
+### 128. Guardar TODOs en LocalStorage
+Interaccion de init de reducer y effect combinados para guardar info en localstorage

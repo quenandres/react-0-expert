@@ -1,26 +1,37 @@
-import React, { useReducer } from 'react'
+import React, { useEffect, useReducer } from 'react'
 import { todoReducer } from './todoReducer';
-
+import { useForm } from '../../hooks/useForm';
 
 import './styles.css';
 
-const initialState = [{
-    id: new Date().getTime(),
-    description: 'Aprender react',
-    done: false
-}]
+const initialState = [];
+
+const init = () => {
+    return JSON.parse(localStorage.getItem('todos')) || [];
+}
 
 export const TodoApp = () => {
 
-    const [ todos, dispatch ] = useReducer(todoReducer, initialState); // El dispatch es una funcion a la que se le manda una accion para saber a cual reducer debe llamar
-    console.log(todos);
+    const [ todos, dispatch ] = useReducer(todoReducer, [], init); // El dispatch es una funcion a la que se le manda una accion para saber a cual reducer debe llamar
+    const [ { description }, handleInputChange, reset ] = useForm({
+        description: ''
+    });   
 
+    useEffect(() => {
+       localStorage.setItem('todos', JSON.stringify(todos)); 
+    }, [todos])
+
+    
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('Nueva tarea');
+
+        if( description.trim().length <= 1 ) {
+            return ;
+        }
+        
         const newTodo = {
             id: new Date().getTime(),
-            description: 'Nueva tarea',
+            description: description,
             done: false
         };
 
@@ -30,7 +41,7 @@ export const TodoApp = () => {
         };
 
         dispatch(action);
-
+        reset();
     }
 
     return (
@@ -62,7 +73,9 @@ export const TodoApp = () => {
                         name="description"
                         className='form-control'
                         placeholder='Aprender...'
-                        autoComplete='off'                        
+                        autoComplete='off'
+                        value={ description }
+                        onChange={handleInputChange}                        
                         />
 
                         <button 
