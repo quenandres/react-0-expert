@@ -289,3 +289,6 @@ Interaccion de init de reducer y effect combinados para guardar info en localsto
 
 ### 129. Borrar un TODO
 Creamos un case en el todoReducer, que haga la accion de eliminacion, como el effect detecta cambio en los state, se ejecuta nuevamente para guardar los todo en el local storage.
+
+### 130. Toggle Todo - Marcar como completado o pendiente un TODO
+Se crea un nuevo case para marcar como hecha las tareas al enviarsele el action al dispatch
