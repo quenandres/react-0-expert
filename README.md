@@ -286,3 +286,6 @@ La funcion dispatch, sabe a que reducer pertenece y puede ser enviada como param
 
 ### 128. Guardar TODOs en LocalStorage
 Interaccion de init de reducer y effect combinados para guardar info en localstorage
+
+### 129. Borrar un TODO
+Creamos un case en el todoReducer, que haga la accion de eliminacion, como el effect detecta cambio en los state, se ejecuta nuevamente para guardar los todo en el local storage.
