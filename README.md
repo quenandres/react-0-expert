@@ -292,3 +292,5 @@ Creamos un case en el todoReducer, que haga la accion de eliminacion, como el ef
 
 ### 130. Toggle Todo - Marcar como completado o pendiente un TODO
 Se crea un nuevo case para marcar como hecha las tareas al enviarsele el action al dispatch
+
+### 131. Optimización #1 - Listado de TODOs

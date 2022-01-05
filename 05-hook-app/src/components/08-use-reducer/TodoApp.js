@@ -4,8 +4,6 @@ import { useForm } from '../../hooks/useForm';
 
 import './styles.css';
 
-const initialState = [];
-
 const init = () => {
     return JSON.parse(localStorage.getItem('todos')) || [];
 }
@@ -68,25 +66,14 @@ export const TodoApp = () => {
             <hr />
             <div className='row'>
                 <div className='col-7'>
-                    <ul className='list-group list-group-flush'>
-                        {
-                            todos.map((todo, i) => (
-                                <li 
-                                className='list-group-item'
-                                key={ todo.id }
-                                >
-                                    <p 
-                                        className={`${ todo.done && 'complete' }`}
-                                        onClick={ () => handleToggle(todo.id)}
-                                    > { i + 1 }. { todo.description } </p>
-                                    <button 
-                                        className='btn btn-danger'
-                                        onClick={ () => handleDelete(todo.id) }
-                                    >Borrar</button>
-                                </li>
-                            ))    
-                        }
-                    </ul>
+                    {/* 
+                        TodosList, todos, handleDelete, handleToggle
+                    */}
+                   <TodoApp 
+                        todos={ todos }
+                        handleDelete={ handleDelete }
+                        handleToggle={ handleToggle }
+                    />
                 </div>
                 <div className='col-5'>
                     <h4>Agregar TODO</h4>
