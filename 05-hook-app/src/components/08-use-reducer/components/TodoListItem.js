@@ -1,15 +1,15 @@
 import React from 'react'
 
-export const TodoListItem = ({key, todo, handleToggle, handleDelete}) => {
+export const TodoListItem = ({todo, handleToggle, handleDelete, i}) => {
     return (
         <li 
             className='list-group-item'
-            key={ todo.id }
+            key={ i }
         >
             <p 
                 className={`${ todo.done && 'complete' }`}
                 onClick={ () => handleToggle(todo.id)}
-            > { key + 1 }. { todo.description } </p>
+            > { i + 1 }. { todo.description } </p>
             <button 
                 className='btn btn-danger'
                 onClick={ () => handleDelete(todo.id) }
