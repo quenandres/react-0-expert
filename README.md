@@ -293,4 +293,17 @@ Creamos un case en el todoReducer, que haga la accion de eliminacion, como el ef
 ### 130. Toggle Todo - Marcar como completado o pendiente un TODO
 Se crea un nuevo case para marcar como hecha las tareas al enviarsele el action al dispatch
 
-### 131. Optimización #1 - Listado de TODOs
+## Sección 11 - Profundizando Hooks . useContext
+¿Qué veremos en esta sección?
+
+- Context
+- Provider
+- useContext
+- React Router
+- Links y NavLinks
+- CreateContext
+- SPA ( Single Page Application )
+
+* El objetivo de la sección es principalmente aprender sobre el Context, el Router es un valor agregado que explotaremos mucho más en próximas secciones, pero al usar un Router, podemos explicar claramente el problema y necesidad del context.
+
+### 136. Introducción al Context
