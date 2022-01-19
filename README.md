@@ -335,3 +335,6 @@ export const MainApp = () => {
     </div>;
 };
 ```
+
+### 141. useContext
+Se realizan ejemplos para comprobar funcionamiento de useContext, pasando informacion entre componentes.
