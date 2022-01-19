@@ -306,4 +306,32 @@ Se crea un nuevo case para marcar como hecha las tareas al enviarsele el action 
 
 * El objetivo de la sección es principalmente aprender sobre el Context, el Router es un valor agregado que explotaremos mucho más en próximas secciones, pero al usar un Router, podemos explicar claramente el problema y necesidad del context.
 
-### 136. Introducción al Context
+### 140. CreateContext y useContext
+Se crea componente Usercontext 'createContext'
+que es un higher-order component
+```
+import { createContext } from 'react';
+
+export const UserContext = createContext(null);
+```
+
+Lo importamos en un componente que contenga los demas como hijos y lo ponemos como padre de este
+```
+import React from 'react';
+import { AppRouter } from './AppRouter';
+import { UserContext } from './UserContext';
+
+export const MainApp = () => {
+
+    const user = {
+        id: 123,
+        name:'Andres',
+        email: 'Mejia@mail.com'
+    }
+    return <div>
+        <UserContext.Provider value={user}>
+            <AppRouter />
+        </UserContext.Provider>
+    </div>;
+};
+```

@@ -10,9 +10,9 @@ export const NavBar = () => {
     </button>
     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div className="navbar-nav">        
-        <NavLink to="/" activeClassName="active" className="nav-item nav-link">Home</NavLink>
-        <NavLink to="/about" activeClassName="active" className="nav-item nav-link">About</NavLink>
-        <NavLink to="/login" activeClassName="active" className="nav-item nav-link">Login</NavLink>
+        <NavLink to="/" className="nav-item nav-link">Home</NavLink>
+        <NavLink to="/about" className="nav-item nav-link">About</NavLink>
+        <NavLink to="/login" className="nav-item nav-link">Login</NavLink>
       </div>
     </div>
   </nav>  
