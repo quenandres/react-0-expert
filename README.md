@@ -69,6 +69,8 @@ Se instala enzyme-to-json
 "enzyme": "^3.11.0",
 "enzyme-to-json": "^3.6.2"
 
+
+
 - wrapper: tiene la informacion del componente renderizada para que pueda ser utilizada y comparada desde el test.
 
 # ***Seccion 6 GifExpertApp - Aplicacion.***
@@ -338,3 +340,19 @@ export const MainApp = () => {
 
 ### 141. useContext
 Se realizan ejemplos para comprobar funcionamiento de useContext, pasando informacion entre componentes.
+
+## Pruebas unitarias y de integracion Custom hooks
+### ¿Qué veremos en esta sección?
+
+- Pruebas sobre Hooks y CustomHooks
+
+- Ese es el tema principal, demostrar cómo podemos evaluar cada unos de los hooks aplicados anteriormente con sus casos reales de uso.
+
+- Hay varios extras, como la prueba de un Reducer, que realmente no es nada complicado, también quiero aclarar qué nos toca evaluar a nosotros y qué no es responsabilidad nuestra.
+
+### 145. Inicio de proyecto - Pruebas sobre Hooks
+- Se instalan:
+  - enzyme
+  - enzyme-to-json
+  - react-hooks-testing-library
+- 
