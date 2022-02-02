@@ -361,3 +361,6 @@ Se realizan ejemplos para comprobar funcionamiento de useContext, pasando inform
  Se implementa un mock para revisar la información.
  ``` jest.mock('../../../hooks/useFetch'); ```
  Implementamo mock, para poner informacion por default, para que el componente nos funcione sin hacer verdadero llamado a los hooks.
+
+ ### 152. Tarea - Interacciones con el useState
+ El shallow lo utilizamos para evaluar el componente de manera aislada.
