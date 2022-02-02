@@ -355,4 +355,9 @@ Se realizan ejemplos para comprobar funcionamiento de useContext, pasando inform
   - enzyme
   - enzyme-to-json
   - react-hooks-testing-library
-- 
+
+
+### 151. Pruebas con múltiples hooks simultáneos
+ Se implementa un mock para revisar la información.
+ ``` jest.mock('../../../hooks/useFetch'); ```
+ Implementamo mock, para poner informacion por default, para que el componente nos funcione sin hacer verdadero llamado a los hooks.
